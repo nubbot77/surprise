@@ -2,8 +2,8 @@ import { Heart, Sparkles } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <div className="text-center py-16 px-4">
-      <div className="max-w-3xl mx-auto bg-white/70 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border-4 border-rose-200">
+    <div className="text-center py-16 px-4 animate-in fade-in zoom-in-95 duration-700">
+      <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-md rounded-3xl p-10 shadow-2xl border-4 border-rose-200 hover:shadow-rose-200/50 transition-shadow duration-500">
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 bg-clip-text text-transparent animate-pulse-slow">
           Hey Anushmita! <span className="inline-block">💝</span>
         </h1>

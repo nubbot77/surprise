@@ -62,7 +62,7 @@ export default function FloatingHearts() {
   }, [])
 
   return (
-    <div className="romantic-background">
+    <div className="romantic-background" style={{ willChange: 'transform' }}>
       {particles.map((particle) => {
         if (particle.type === 'flower') {
           return (
@@ -73,6 +73,7 @@ export default function FloatingHearts() {
                 left: `${particle.left}%`,
                 animationDelay: `${particle.delay}s`,
                 animationDuration: `${particle.duration}s`,
+                willChange: 'transform, opacity',
                 fontSize: `${particle.size}px`,
               }}
             >

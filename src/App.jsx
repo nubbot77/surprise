@@ -63,7 +63,8 @@ function App() {
           <div className="fixed top-4 left-4 z-50 animate-in fade-in slide-in-from-left duration-500">
             <button
               onClick={() => setCurrentView('home')}
-              className="bg-white/90 backdrop-blur-md p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 group"
+              className="bg-white/90 backdrop-blur-md p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-rose-300"
+              aria-label="Back to home"
             >
               <Home className="w-5 h-5 text-rose-500" />
               <span className="text-sm font-medium text-rose-500 max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300">
@@ -91,7 +92,8 @@ function App() {
                     <button
                       key={game.id}
                       onClick={() => setCurrentView(game.id)}
-                      className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-rose-200 hover:border-rose-400"
+                      className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-2 border-rose-200 hover:border-rose-400 group focus:outline-none focus:ring-4 focus:ring-rose-300"
+                      aria-label={`Open ${game.title}`}
                     >
                       <game.icon className="w-12 h-12 text-rose-500 mx-auto mb-3 animate-bounce-slow" />
                       <h3 className="text-xl font-semibold text-rose-700">{game.name}</h3>
@@ -112,7 +114,8 @@ function App() {
                     <button
                       key={game.id}
                       onClick={() => setCurrentView(game.id)}
-                      className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-purple-200 hover:border-purple-400"
+                      className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-2 border-purple-200 hover:border-purple-400 group focus:outline-none focus:ring-4 focus:ring-purple-300"
+                      aria-label={`Open ${game.title}`}
                     >
                       <game.icon className="w-12 h-12 text-purple-500 mx-auto mb-3 animate-bounce-slow" />
                       <h3 className="text-xl font-semibold text-purple-700">{game.name}</h3>
@@ -133,7 +136,8 @@ function App() {
                     <button
                       key={feature.id}
                       onClick={() => setCurrentView(feature.id)}
-                      className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-pink-200 hover:border-pink-400"
+                      className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-2 border-pink-200 hover:border-pink-400 group focus:outline-none focus:ring-4 focus:ring-pink-300"
+                      aria-label={`Open ${feature.title}`}
                     >
                       <feature.icon className="w-12 h-12 text-pink-500 mx-auto mb-3 animate-float" />
                       <h3 className="text-xl font-semibold text-pink-700">{feature.name}</h3>
