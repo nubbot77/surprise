@@ -31,12 +31,12 @@ export default function VirtualHug() {
     <div className="bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200 rounded-3xl p-8 shadow-2xl">
       <h2 className="text-4xl font-bold text-center mb-6 text-purple-800 flex items-center justify-center gap-3">
         <Heart className="w-10 h-10 animate-heart-beat" />
-        Virtual Hug
+        Hugs on Demand
         <Heart className="w-10 h-10 animate-heart-beat" />
       </h2>
 
       <p className="text-center text-lg text-gray-700 mb-8">
-        Need a hug? I've got unlimited ones for you! 🤗
+        Sometimes you just need a hug, right? 🤗
       </p>
 
       <div className="flex flex-col items-center gap-6">

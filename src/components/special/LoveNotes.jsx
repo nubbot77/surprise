@@ -47,12 +47,12 @@ export default function LoveNotes() {
     <div className="bg-gradient-to-br from-rose-200 via-pink-200 to-purple-200 rounded-3xl p-8 shadow-2xl">
       <h2 className="text-4xl font-bold text-center mb-6 text-rose-800 flex items-center justify-center gap-3">
         <Heart className="w-10 h-10 animate-heart-beat fill-current" />
-        Love Notes Carousel
+        Little Reminders
         <Heart className="w-10 h-10 animate-heart-beat fill-current" />
       </h2>
 
       <p className="text-center text-lg text-gray-700 mb-8">
-        Sweet messages just for you! 💌
+        Sweet little notes that are all true 💌
       </p>
 
       <div className="flex items-center justify-center gap-4 mb-6">

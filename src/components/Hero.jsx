@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="text-center py-16 px-4">
       <div className="max-w-3xl mx-auto bg-white/70 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border-4 border-rose-200">
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 bg-clip-text text-transparent animate-pulse-slow">
-          Hey Anushmita! 💝
+          Hey Anushmita! <span className="inline-block">💝</span>
         </h1>
         
         <div className="space-y-6 text-lg text-gray-700">
@@ -52,7 +52,28 @@ export default function Hero() {
             to make you smile. Come back here anytime you need a pick-me-up! 😊
           </p>
           
-          <div className="mt-8 pt-6 border-t-2 border-rose-200">
+          <div className="mt-8 pt-6 border-t-2 border-purple-200">
+            <p className="text-xl leading-relaxed italic text-gray-600">
+              You know what's funny? I used to be that person who said 
+              <span className="font-semibold text-purple-600"> "love isn't for me, it's just a waste of time." </span>
+              I genuinely believed that. And yet here I am, building this entire website for someone I met just recently. 
+            </p>
+            
+            <p className="text-xl leading-relaxed italic text-gray-600 mt-4">
+              I don't know what happened to me, honestly. Maybe it's not love right now – I'm not even sure what to call it. 
+              But there's something about you that just... 
+              <span className="font-semibold text-pink-600"> draws me in. </span>
+              I'm confused, I'll admit that. But if being confused means spending hours creating something 
+              that might make you smile, then maybe confusion isn't such a bad place to be. 🌸
+            </p>
+            
+            <p className="text-xl leading-relaxed italic text-gray-600 mt-4">
+              Maybe this is what they mean when they say the right person makes you see things differently. 
+              All I know is that making you happy feels worth it. ✨
+            </p>
+          </div>
+          
+          <div className="mt-6 pt-6 border-t-2 border-rose-200">
             <p className="text-2xl font-semibold text-rose-600 flex items-center justify-center gap-2">
               Made with love by San 
               <Heart className="w-6 h-6 text-red-500 animate-heart-beat fill-current" />

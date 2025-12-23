@@ -47,12 +47,12 @@ export default function ComplimentGenerator() {
     <div className="bg-gradient-to-br from-yellow-200 via-pink-200 to-purple-200 rounded-3xl p-8 shadow-2xl">
       <h2 className="text-4xl font-bold text-center mb-6 text-purple-800 flex items-center justify-center gap-3">
         <Sparkles className="w-10 h-10 animate-pulse" />
-        Compliment Generator
+        Need a Boost?
         <Sparkles className="w-10 h-10 animate-pulse" />
       </h2>
 
       <p className="text-center text-lg text-gray-700 mb-8">
-        Need a boost? Get your personalized compliment! 💝
+        Here's something nice just for you! 💝
       </p>
 
       <div className="flex flex-col items-center gap-6">

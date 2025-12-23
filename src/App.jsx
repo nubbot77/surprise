@@ -60,10 +60,10 @@ function App() {
       <div className="relative z-10">
         {/* Navigation */}
         {currentView !== 'home' && (
-          <div className="fixed top-4 left-4 z-50">
+          <div className="fixed top-4 left-4 z-50 animate-in fade-in slide-in-from-left duration-500">
             <button
               onClick={() => setCurrentView('home')}
-              className="bg-white/80 backdrop-blur-sm p-3 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center gap-2 group"
+              className="bg-white/90 backdrop-blur-md p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 group"
             >
               <Home className="w-5 h-5 text-rose-500" />
               <span className="text-sm font-medium text-rose-500 max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300">
@@ -76,14 +76,14 @@ function App() {
         {/* Main Content */}
         <div className="container mx-auto px-4 py-8">
           {currentView === 'home' ? (
-            <>
+            <div className="animate-in fade-in duration-700">
               <Hero />
               
               {/* Romantic Games Section */}
-              <section className="mt-16">
+              <section className="mt-16 animate-in fade-in slide-in-from-bottom duration-700 delay-150">
                 <h2 className="text-4xl font-bold text-center mb-8 text-rose-600 flex items-center justify-center gap-3">
                   <Heart className="w-8 h-8 animate-heart-beat" />
-                  Sweet Moments
+                  Just for You 💕
                   <Heart className="w-8 h-8 animate-heart-beat" />
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -101,10 +101,10 @@ function App() {
               </section>
 
               {/* Fun Games Section */}
-              <section className="mt-16">
+              <section className="mt-16 animate-in fade-in slide-in-from-bottom duration-700 delay-300">
                 <h2 className="text-4xl font-bold text-center mb-8 text-purple-600 flex items-center justify-center gap-3">
                   <Sparkles className="w-8 h-8 animate-pulse" />
-                  Fun Games
+                  Let's Play! 🎮
                   <Sparkles className="w-8 h-8 animate-pulse" />
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -122,10 +122,10 @@ function App() {
               </section>
 
               {/* Special Features Section */}
-              <section className="mt-16 mb-16">
+              <section className="mt-16 mb-16 animate-in fade-in slide-in-from-bottom duration-700 delay-500">
                 <h2 className="text-4xl font-bold text-center mb-8 text-pink-600 flex items-center justify-center gap-3">
                   <Star className="w-8 h-8 animate-wiggle" />
-                  Special For You
+                  When You Need It Most ✨
                   <Star className="w-8 h-8 animate-wiggle" />
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -141,9 +141,9 @@ function App() {
                   ))}
                 </div>
               </section>
-            </>
+            </div>
           ) : (
-            <div className="max-w-4xl mx-auto mt-20">
+            <div className="max-w-4xl mx-auto mt-20 animate-in fade-in zoom-in-95 duration-500">
               {getCurrentComponent()}
             </div>
           )}

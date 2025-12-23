@@ -38,12 +38,12 @@ export default function LoveFortuneTeller() {
     <div className="bg-gradient-to-br from-purple-200 via-pink-200 to-rose-200 rounded-3xl p-8 shadow-2xl">
       <h2 className="text-4xl font-bold text-center mb-6 text-purple-800 flex items-center justify-center gap-3">
         <Star className="w-10 h-10 animate-wiggle" />
-        Love Fortune Teller
+        What Does Today Hold?
         <Star className="w-10 h-10 animate-wiggle" />
       </h2>
       
       <p className="text-center text-lg text-gray-700 mb-8">
-        Click the crystal ball to reveal your fortune! 🔮
+        Let's see what magic the universe has for you today! 🔮
       </p>
 
       <div className="flex flex-col items-center gap-6">
